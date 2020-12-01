@@ -1,11 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
     tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
 
         <fragment
             android:id="@+id/mainFragment"
@@ -20,10 +24,13 @@
             class="br.com.local.appfragment.DoisFragment"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            tools:layout="@layout/dois_fragment">
-        </fragment>
+            tools:layout="@layout/dois_fragment"></fragment>
 
-
-
-
-</LinearLayout>
+        <fragment
+            android:id="@+id/tresFragment"
+            class="br.com.local.appfragment.Tres_Fragment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:layout="@layout/fragment_tres"></fragment>
+    </LinearLayout>
+</ScrollView>
