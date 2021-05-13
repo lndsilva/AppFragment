@@ -12,6 +12,12 @@
         android:orientation="vertical">
 
         <fragment
+            class="br.com.local.appfragment.ExemploFragment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:layout="@layout/exemplo_fragment"></fragment>
+
+        <fragment
             android:id="@+id/mainFragment"
             class="br.com.local.appfragment.MyFragment"
             android:layout_width="match_parent"
